@@ -60,3 +60,9 @@ const addTask = () => {
 };
 
 addTaskButton.addEventListener("click", addTask);
+
+todoInput.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        addTask();
+    }
+});
